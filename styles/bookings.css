@@ -1,0 +1,124 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-images/form-pg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;  
+}
+
+header, footer {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form-title {
+  color: white;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.form-desc {
+  color: silver;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px 0 25px;
+}
+
+.form-holder {
+  height: 100%;
+  width: 750px;
+  margin: auto;
+  padding: 25px 30px;
+  background-color: rgba(203, 203, 203, 0.5);
+  color: rgb(56, 56, 56);
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.form > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 750px;
+}
+
+.form > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form label {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.form label i {
+  margin-right: 10px;
+}
+
+.form input, .form select{
+  height: 35px;
+  width: 315px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: rgb(221, 221, 221);
+  font-size: 17px;
+  box-sizing: border-box;
+}
+
+.form input::placeholder {
+  color: rgb(136, 136, 136);
+}
+
+.form input:focus , .form select:focus {
+  outline: none;
+  border: solid 2px rgb(115, 115, 115);
+}
+
+.radio-choice {
+  width: 315px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.radio-choice input{
+  height: 20px;
+  width: 20px;
+}
+
+.btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 28px;
+}
+
+.btn-reset, .btn-submit {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 7px;
+  padding: 7px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn-reset:hover, .btn-submit:hover {
+  color: silver;
+  filter: brightness(85%);
+}
+
+.btn-reset:active, .btn-submit:active {
+  color: silver;
+  filter: brightness(80%);
+}
+
+.btn-reset {
+  background-color: rgb(196, 148, 7);
+}
+
+.btn-submit {
+  background-color: rgb(161, 3, 3);
+}

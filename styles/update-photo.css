@@ -1,0 +1,150 @@
+body {
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('bg-images/update-photo.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  color: silver;
+  margin-bottom: 30px;
+  word-spacing: 3px;
+  letter-spacing: 1.5px;
+}
+
+.form-container {
+  position: relative;
+  width: 800px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 85px 30px 30px 30px;
+}
+
+form div:not(:last-child) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 22px 0;
+}
+
+form {
+  width: 100%;
+}
+
+.btn-back {
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  border-radius: 10%;
+  background-color: rgb(196, 148, 7);
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: 0.5s;
+}
+
+.btn-back:hover {
+  filter: brightness(75%);
+}
+
+.btn-back:active {
+  filter: brightness(65%);
+}
+
+form div label {
+  font-size: 24px;
+  color: white;
+}
+
+form div input, #category {
+  width: 300px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: rgb(221, 221, 221);
+  font-size: 17px;
+  box-sizing: border-box;
+}
+
+form div input::placeholder, #category::placeholder{
+  color: rgb(95, 95, 95);
+}
+
+form div input:focus, #category:focus {
+  outline: none;
+  border: solid 1px rgb(115, 115, 115);
+}
+
+.img-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}  
+
+.img-display img {
+  height: 80px;
+  width: 85px;
+  border-radius: 5%;
+  object-fit: cover;
+  object-position: center;
+  background-color: gray;
+  border: 2px solid white;
+}
+
+.btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 35px;
+}
+
+.btn-update, .btn-reset {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 7px;
+  padding: 7px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn-update:hover, .btn-reset:hover {
+  color: silver;
+  filter: brightness(85%);
+}
+
+.btn-update:active, .btn-reset:active {
+  color: silver;
+  filter: brightness(80%);
+}
+
+.btn-update {
+  background-color: rgb(112, 130, 56);
+}
+
+.btn-reset {
+  background-color: rgb(196, 148, 7);
+}

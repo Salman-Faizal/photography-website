@@ -1,0 +1,72 @@
+body {
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg-images/dashboard.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  letter-spacing: 1.5px;
+}
+
+.task-list {
+  width: 550px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-list button:not(.btn-logout) {
+  width: 500px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: silver;
+  color: rgb(6, 40, 54);
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.task-list button:hover {
+  opacity: 0.6;
+}
+
+.task-list button:active {
+  opacity: 0.5;
+}
+
+.btn-logout {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(255, 193, 7);
+  color: rgb(6, 42, 58);
+  border: none;
+  outline: none;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 800;
+  transition: 0.5s;
+}

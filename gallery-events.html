@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS style sheets -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/img-gallery.css">
+    <style>
+      body {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(styles/bg-images/gallery-events.jpg);
+      }
+      .slide-container {
+        filter: brightness(65%);
+      }
+      .content {
+        text-shadow: 0 0 6px black;
+      }
+    </style>
+
+    <!-- Js links -->
+    <script defer src="js-files/gallery-sub.js"></script>
+    <script defer src="js-files/header-include.js"></script>
+    <script defer src="js-files/footer-include.js"></script>
+
+    <title>gallery-events-photograpy-ml</title>
+  </head>
+
+  <body>
+    <site-header id="header"></site-header>
+
+    <main>
+      <div class="gallery-title">
+        Event photographies
+      </div>
+
+      <div class="slide-container">
+        <div class="slide">
+          <div class="item" style="background-image: url(gallery-pics/events/img2.jpeg);">
+            <div class="content">
+              <div class="name">Pure bliss</div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(gallery-pics/events/img1.jpeg);">
+            <div class="content">
+              <div class="name">Festiva de Mexico</div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(gallery-pics/events/img3.jpg);">
+            <div class="content">
+              <div class="name">Joy of innocence</div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(gallery-pics/events/img4.jpg);">
+            <div class="content">
+              <div class="name">Arrangement of Glamor</div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(gallery-pics/events/img5.jpg);">
+            <div class="content">
+              <div class="name">Scholaria, 2019</div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(gallery-pics/events/img6.jpeg);">
+            <div class="content">
+              <div class="name">Blooming love</div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(gallery-pics/events/img7.webp);">
+            <div class="content">
+              <div class="name">Connection</div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(gallery-pics/events/img8.jpeg);">
+            <div class="content">
+              <div class="name">Party time</div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(gallery-pics/events/img9.jpg);">
+            <div class="content">
+              <div class="name">For lifetime</div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(gallery-pics/events/img10.jpg);">
+            <div class="content">
+              <div class="name">Sportfesta, 2023</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="prev"><i class="fa fa-chevron-circle-left"></i></button>
+          <button class="next"><i class="fa fa-chevron-circle-right"></i></button>
+        </div>
+      </div>
+    </main>
+
+    <site-footer id="footer"></site-footer>
+
+  </body>
+</html>

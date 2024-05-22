@@ -1,0 +1,131 @@
+body {
+  background-color: rgb(60, 60, 60);
+}
+
+header, footer {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: silver;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+
+.menu div {
+  position: relative;
+  cursor: pointer;
+  border-bottom: solid 3px rgb(255, 193, 7);
+}
+
+.menu div::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background: rgb(255, 193, 7);
+  position: absolute;
+  right: 0;
+  top: -5px;
+  transition: 0.5s;
+}
+
+.menu div:hover::after {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.gallery {
+  display: grid;
+  grid-auto-flow: column;
+  gap:30px;
+  width: 73%;
+  padding: 20px 0;
+  margin: auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery.no-transition {
+  scroll-behavior: auto;
+}
+
+.gallery.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.gallery.dragging .div {
+  cursor: grab;
+  user-select: none;
+}
+
+#prev, #next {
+  color: silver;
+  font-size: 40px;
+  text-shadow: 0 0 4px rgb(32, 32, 32);
+  position: absolute;
+  z-index: 100;
+  top: 45%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#prev {
+  left: 185px;
+}
+
+#next {
+  right: 185px;
+}
+
+#prev:hover, #next:hover {
+  text-shadow: 0 0 3px silver;
+}
+
+.card {
+  scroll-snap-align: start;
+  height: 350px;
+  width: 350px;
+  position: relative;
+}
+
+.card p {
+  color: white;
+  font-size: 18px;
+  text-shadow: 0 0 20px black;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(60%);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card img:hover {
+  width: 355px;
+  height: 355px;
+  box-shadow: 0 0 10px rgb(32, 32, 32);
+}

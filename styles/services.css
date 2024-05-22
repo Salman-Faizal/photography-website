@@ -1,0 +1,160 @@
+body {
+  background-color: rgb(60, 60, 60);
+}
+
+header, footer {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.intro {
+  color: silver;
+  font-size: 22px;
+  text-align: justify;
+  padding: 10px 22px;
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.card-services {
+  background-color: rgba(77, 77, 77, 0.5);
+  width: 660px;
+  height: 435px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollable-div::-webkit-scrollbar {
+  display: none;
+}
+
+.sample-photo, .card {
+  margin: 15px;
+  height: 300px;
+  width: 300px;
+  border-radius: 6px;
+  filter: brightness(80%);
+}
+
+.sample-photo {
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  background-color: rgb(255, 193, 7);
+  color: rgb(77, 77, 77);
+  padding: 75px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 65px;
+  background-color: silver;
+}
+
+.card-header i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  font-size: 25px;
+  color: silver;
+  background-color: rgb(77, 77, 77);
+}
+
+.card-title {
+  font-size: 22px;
+}
+
+.card p {
+  margin: 5px 0 15px 0;
+}
+
+.price-range {
+  font-size: 24px;
+}
+
+.testimonials {
+  height: 100%;
+  border-left: solid 3px rgb(255, 193, 7);
+}
+
+.testimonial-title {
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0 0 18px 4px;
+}
+
+.testimonial-card {
+  height: 100px;
+  width: 550px;
+  color: rgb(60, 60, 60);
+  background-color: rgb(255, 193, 7, 0.65);
+  font-size: 22px;
+  font-weight: 500;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin: 0 0 6px 20px;
+}
+
+.testimonial-card:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 55px 0;
+}
+
+.cta-text {
+  color: rgb(204, 204, 204);
+  font-size: 20px;
+}
+
+.cta-btn {
+  color:silver;
+  background-color: transparent;
+  border: solid 3px rgb(255, 193, 7);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  padding: 5px 8px;
+  margin: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cta-btn:hover {
+  background-color: rgb(255, 193, 7);
+  color: rgb(60, 60, 60);
+}
